@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-    <title>MC-Schale - 一个 Minecraft 服务器</title>
-    <meta name="keywords" content="MC-Schale,Minecraft,MC服务器">
-    <meta name="description" content="MC-Schale - 一个 Minecraft 服务器">
+    <title>沐雨 - 一个 Minecraft 服务器</title>
+    <meta name="keywords" content="Muyu,Minecraft,MC服务器">
+    <meta name="description" content="沐雨 - 一个 Minecraft 服务器">
     <link rel="stylesheet" href="css/docs-v17.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/mdui.min.css" />
@@ -48,6 +48,34 @@
 
 <!-- 通义灵码部分结束 -->
 
+<style>
+    .mdui-icon-grayscale {
+        color: rgba(0, 0, 0, 0.38); /* 或者自定义一个灰色值 */
+    }
+
+    .mdui-icon-large {
+        font-size: 5rem; /* 调整为你需要的大图标大小 */
+    }
+</style>
+
+<style>
+    .custom-width-card {
+        width: 250px; /* 替换为你想要的宽度 */
+    }
+</style>
+
+<style>
+    .card-container {
+        display: flex;
+        flex-wrap: wrap; /* 允许换行 */
+        justify-content: space-between; /* 两端对齐，卡片之间有间距 */
+    }
+
+    .custom-width-card {
+        width: calc(33% - 20px); /* 设置卡片宽度为父容器宽度的三分之一减去适当间距，这里假设每个卡片左右间距各为10px */
+    }
+</style>
+
 </head>
 <!-- v1.0，无背景(目前视频背景需要用到它,以设置顶栏的颜色) -->
 <body class="mdui-bottom-nav-fixed mdui-appbar-with-toolbar mdui-theme-primary-blue mdui-theme-accent-blue mdui-theme-layout-auto mdui-loaded">
@@ -56,7 +84,7 @@
     
     <!-- 视频背景 -->
     <video class="video-background" autoplay loop muted playsinline>
-        <source src="./Resources/Video/mika.mp4" type="video/mp4">
+        <source src="./Resources/Video/Background.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
@@ -65,7 +93,7 @@
             <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white " mdui-drawer="{target: '#main-drawer','overlay':true}"><i
                     class="mdui-icon material-icons">menu</i></span>
             <a href="index.html" class="mdui-typo-headline mdui-hidden-xs">
-                MC-Schale
+                沐雨服务器
             </a>
             <a href="index.html#" class="mdui-typo-title">首页</a>
             <!-- <div class="mdui-toolbar-spacer"></div> -->
@@ -102,7 +130,7 @@
                 <div class="mdui-card-primary" style="position:relative;">
                     <img style="width:30%; border-radius: 16px;" src="./images/Logo.jpg">
                     <br>
-                    <div class="mdui-typo-title mdui-text-color-white drawer-title-text">MC-Schale 服务器</div>
+                    <div class="mdui-typo-title mdui-text-color-white drawer-title-text">沐雨服务器</div>
                 </div>
             </div>
         </div>
@@ -137,13 +165,15 @@
     <div id="page-index" class="mdui-container">
         <div class="banner">
 
-            <h1><strong>MC-Schale</strong></h1>
+            <h1><strong>沐雨世界 MUYUCRAFT</strong></h1>
             <div style='height:10px'></div>
             <div class="meta">
-                <div style='height:12px'></div>一个 <strong>Minecraft</strong> 服务器<br><br>QQ 群：<strong>693856047</strong>
+                <div style='height:12px'></div>一个新时代的 <strong>我的世界服务器</strong> ,服务器进步从未停滞<br><br>QQ 群：<strong>615115748</strong>
             </div>
             <div class="actions">
                 <a href="./Announcement.html" class="mdui-btn mdui-ripple">公告</a>
+                <a href="./Join.html" class="mdui-btn mdui-ripple" mdui-tooltip="{content: '与其他玩家一起游戏'}">加入服务器</a>
+
             </div>
         </div>
     </div>
@@ -155,6 +185,108 @@
         </div>
     </div> -->
 
+
+    <div class="mdui-container" style="max-width: 800px;">
+        <br>
+        <div class="mdui-card" style="border-radius: 12px;">
+            <!-- <div class="mdui-card-media">
+                <img src="./images/background.jpg" style="max-height: 300px;object-fit: cover;" />
+            </div> -->
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">关于我们</div>
+                    <div class="mdui-card-primary-subtitle">这是服务器的创始人</div>
+                </div>
+                <div class="mdui-card-content">
+                
+                    <!-- <div class="mdui-card"> -->
+
+                        <!-- 卡片头部，包含头像、标题、副标题 -->
+                        <!-- <div class="mdui-card-header">
+                            <img class="mdui-card-header-avatar" src="./images/Peoples/bdlvl.jpg"/>
+                            <div class="mdui-card-header-title">病度lvl</div>
+                            <div class="mdui-card-header-subtitle">MC-Schale 服务器创始人 & PR/AE 爱好者</div>
+                        </div> -->
+                  
+                        <!-- 卡片的标题和副标题 -->
+                        <!-- <div class="mdui-card-primary">
+                            <div class="mdui-card-primary-title">不知道写什么</div>
+                            <div class="mdui-card-primary-subtitle">111</div>
+                        </div> -->
+                  
+                        <!-- 卡片的标题和副标题 -->
+                        <!-- <div class="mdui-card mdui-shadow-2">
+                            <div class="mdui-card-primary">
+                                <i class="mdui-icon material-icons mdui-icon-grayscale mdui-icon-large">thumb_up</i>
+                                <div class="mdui-card-primary-title">不知道写什么</div>
+                                <div class="mdui-card-primary-subtitle">111</div>
+                            </div>
+                    
+                        </div> -->
+
+
+
+                            <!-- <div class="mdui-card-content">
+                        
+                                <div class="mdui-card custom-width-card mdui-shadow-2">
+                                    <div class="mdui-card-primary">
+                                        <i class="mdui-icon material-icons mdui-icon-grayscale mdui-icon-large">thumb_up</i>
+                                        <div class="mdui-card-primary-title">年轻的管理团队</div>
+                                        <div class="mdui-card-primary-subtitle">管理组都是初高中生qwq</div>
+                                    </div>
+                                </div>
+                        
+                            </div> -->
+
+
+                    <!-- </div> -->
+
+
+
+                            
+                    <!-- 使用Flexbox布局的卡片容器 -->
+                    <div class="card-container">
+            
+                        <!-- 卡片1 -->
+                        <div class="mdui-card custom-width-card mdui-shadow-2">
+                            <div class="mdui-card-primary">
+                                <i class="mdui-icon material-icons mdui-icon-grayscale mdui-icon-large">thumb_up</i>
+                                <div class="mdui-card-primary-title">年轻的管理团队</div>
+                                <div class="mdui-card-primary-subtitle">管理组都是初高中生qwq</div>
+                            </div>
+                        </div>
+
+                        <!-- 卡片2 -->
+                        <div class="mdui-card custom-width-card mdui-shadow-2">
+                            <div class="mdui-card-primary">
+                                <i class="mdui-icon material-icons mdui-icon-grayscale mdui-icon-large">videogame_asset</i>
+                                <div class="mdui-card-primary-title">多种服务器玩法</div>
+                                <div class="mdui-card-primary-subtitle">既有纯净生存服，也有模组生存</div>
+                            </div>
+                        </div>
+
+                    <!-- 可以继续添加更多卡片... -->
+
+                        <!-- 卡片3 -->
+                        <div class="mdui-card custom-width-card mdui-shadow-2">
+                            <div class="mdui-card-primary">
+                                <i class="mdui-icon material-icons mdui-icon-grayscale mdui-icon-large">thumb_up</i>
+                                <div class="mdui-card-primary-title">卡片标题示例2</div>
+                                <div class="mdui-card-primary-subtitle">副标题示例2</div>
+                            </div>
+                        </div>
+
+                        <!-- 结束 -->
+                    </div>
+
+
+                    
+
+                </div>
+
+            <br>
+    </div>
+
+
     <div class="mdui-container" style="max-width: 800px;">
         <br>
         <div class="mdui-card" style="border-radius: 12px;">
@@ -162,8 +294,8 @@
                 <img src="./images/background.jpg" style="max-height: 300px;object-fit: cover;" />
             </div> -->
             <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title">关于创始人</div>
-                <div class="mdui-card-primary-subtitle">这是服务器的创始人</div>
+                <div class="mdui-card-primary-title">关于我们</div>
+                <div class="mdui-card-primary-subtitle">文本1</div>
             </div>
             <!-- <div class="mdui-card-content">
                 <div class="mdui-panel" mdui-panel>
@@ -220,41 +352,41 @@
                         </div>
                   
                         <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
-                        <div class="mdui-card-media">
-                            <!-- <img src="./images/CardBackground1Mini.png"/> -->
-                  
-                            <!-- 卡片中可以包含一个或多个菜单按钮 -->
-                            <div class="mdui-card-menu">
-                            <!-- <button class="mdui-btn mdui-btn-icon mdui-text-color-white">
-                                <i class="mdui-icon material-icons">launch</i>
-                            </button> -->
+                            <div class="mdui-card-media">
+                                <!-- <img src="./images/CardBackground1Mini.png"/> -->
+                      
+                                <!-- 卡片中可以包含一个或多个菜单按钮 -->
+                                <div class="mdui-card-menu">
+                                    <!-- <button class="mdui-btn mdui-btn-icon mdui-text-color-white">
+                                        <i class="mdui-icon material-icons">launch</i>
+                                    </button> -->
 
-                            <button class="mdui-btn mdui-btn-icon mdui-text-color-white" mdui-tooltip="{content: '在新窗口中打开'}" onclick="openNewTab('https://space.bilibili.com/277750003');">
-                                <i class="mdui-icon material-icons">launch</i>
-                            </button>
+                                    <button class="mdui-btn mdui-btn-icon mdui-text-color-white" mdui-tooltip="{content: '在新窗口中打开'}" onclick="openNewTab('https://space.bilibili.com/277750003');">
+                                        <i class="mdui-icon material-icons">launch</i>
+                                    </button>
                         
+                                </div>
+                            </div>
+                  
+                        <!-- 卡片的标题和副标题 -->
+                        <div class="mdui-card-primary">
+                            <div class="mdui-card-primary-title">不知道写什么</div>
+                            <div class="mdui-card-primary-subtitle">111</div>
                         </div>
-                    </div>
                   
-                    <!-- 卡片的标题和副标题 -->
-                    <div class="mdui-card-primary">
-                        <div class="mdui-card-primary-title">不知道写什么</div>
-                        <div class="mdui-card-primary-subtitle">111</div>
-                    </div>
+                        <!-- 卡片的内容 -->
+                        <div class="mdui-card-content">你好</div>
                   
-                    <!-- 卡片的内容 -->
-                    <div class="mdui-card-content">你好</div>
-                  
-                    <!-- 卡片的按钮 -->
-                    <div class="mdui-card-actions">
-                      <!-- <button class="mdui-btn mdui-ripple">action 1</button> -->
-                      <button class="mdui-btn mdui-ripple" mdui-tooltip="{content: '在新窗口中打开'}" onclick="openNewTab('https://space.bilibili.com/277750003')">哔哩哔哩</button>
+                        <!-- 卡片的按钮 -->
+                        <div class="mdui-card-actions">
+                            <!-- <button class="mdui-btn mdui-ripple">action 1</button> -->
+                            <button class="mdui-btn mdui-ripple" mdui-tooltip="{content: '在新窗口中打开'}" onclick="openNewTab('https://space.bilibili.com/277750003')">哔哩哔哩</button>
 
-                    </div>
+                        </div>
                   
+                    </div>
+
                 </div>
-
-            </div>
 
         </div>
 

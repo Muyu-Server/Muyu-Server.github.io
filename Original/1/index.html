@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<!-- Name: Youplay - Game Template based on Bootstrap Modified By Skypixel Server (PAID) -->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MuyuCraft - 沐雨世界</title>
+    <meta name="keywords" content="我的世界服务器,Minecraft服务器,我的世界,Minecraft,Minecraft联机,沐雨,skypixel">
+    <meta name="description" content="沐雨是一个大型群组服务器,主打生存类服务器,并包含很多时下流行的我的世界游戏玩法,例如纯净生存,空岛生存,RPG类型服务器,监狱风云等等,让您享受最完美的Minecraft群组服务器!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='static/css/css-Lato300400700.css' rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/youplay.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/custom.css">
+    <link rel="stylesheet" href="static/css/clip.css"></head>
+  <style type="text/css">.preloaderbtn{ text-align: center; border-radius: 20px; width: 300px; height: 350px; margin: auto; position: absolute; top: 0; left: 0; right: 0; bottom: 0; }</style>
+  
+  <body>
+    <!-- Preloader -->
+    <!-- <div id="preloader" class="page-preloader preloader-wrapp">
+    <img src="assets/images/logo.png" alt="">
+    <div class="preloader"></div>
+    <div class="preloaderbtn"><button class="btn btn-lg" onclick="HidePreloader()">关闭</button></div></div>
+    <script>
+    function HidePreloader() {
+    document.getElementById('preloader').style.display = 'none';
+    }
+    </script>
+    -->
+    <!-- /Preloader -->
+    <script type="text/javascript">document.body.onfocus = function() {
+        document.title = MuyuCraft - 沐雨世界
+      };
+      document.body.onblur = function() {
+        document.title = "发呆- ( ゜- ゜)つロ"
+      };</script>
+    <style>.alert { padding: 20px; color: white; } .closebtn { margin-left: 15px; color: white; font-weight: bold; float: right; font-size: 22px; line-height: 20px; cursor: pointer; transition: 0.3s; } .closebtn:hover { color: black; }</style>
+    <!-- Navbar -->
+    <nav class="navbar-youplay navbar navbar-default navbar-fixed-top ">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="off-canvas" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="">
+            </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown dropdown-hover">
+              <a href="" class="dropdown-toggle" role="button" aria-expanded="false">主页
+                <span class="label">网站主页~</span></a>
+            </li>
+            <li class="dropdown dropdown-hover">
+              <a href="announcement.html" class="dropdown-toggle" role="button" aria-expanded="false">服务器公告
+                <span class="label">重要信息~</span></a>
+            </li>
+            <li class="dropdown dropdown-hover">
+              <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">服务器特色
+                <span class="caret"></span>
+                <span class="label">子服详情~</span></a>
+              <div class="dropdown-menu">
+                <ul role="menu">
+                  <li>
+                    <a href="survival-1.20.1.html">1.20.1原版生存</a></li>
+                  <li>
+                    <a href="dfk.html">单方块生存</a></li>
+                  <li>
+                    <a href="uhc.html">UHC大逃杀</a></li>
+                </ul>
+                <ul role="menu">
+                  <li>
+                    <a href="joinus.html">加入我们</a></li>
+                </ul>
+                <ul role="menu">
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown dropdown-hover">
+              <a href="login_ext.html" class="dropdown-toggle" role="button" aria-expanded="false">服务器捐赠
+                <span class="label">维护需要~</span></a>
+            </li>
+            <li class="dropdown dropdown-hover">
+              <a href="https://forum.muyucraft.cn" class="dropdown-toggle" role="button" aria-expanded="false">服务器论坛
+                <span class="label">问题提交~</span></a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+
+            <li class="dropdown dropdown-hover dropdown-cart">
+              <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                <i class="glyphicon glyphicon-globe"></i>
+              </a>
+              <div class="dropdown-menu" style="width: 300px;">
+                <div class="row youplay-side-news">
+                  <div class="col-xs-3 col-md-4">
+                    <a href="#" class="angled-img">
+                      <div class="img">
+                        <img src="static/picture/cn.png" alt=""></div>
+                    </a>
+                  </div>
+                  <div class="col-xs-9 col-md-8">
+                    <h4 class="ellipsis">
+                      <a id="translateLink" href="javascript:translatePage();">中文繁体</a></h4>
+                    <span class="quantity">CHN</span></div>
+                </div>
+                <div class="row youplay-side-news">
+                  <div class="col-xs-3 col-md-4">
+                    <a href="#" class="angled-img">
+                      <div class="img">
+                        <img src="static/picture/us.png" alt=""></div>
+                    </a>
+                  </div>
+                  <div class="col-xs-9 col-md-8">
+                    <h4 class="ellipsis">
+                      <a href="en.html">ENG</a></h4>
+                    <span class="quantity">英语</span></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /Navbar -->
+    <section class="content-wrap">
+      <section class="youplay-banner banner-top youplay-banner-parallax">
+        <div class="image" style="background-image:url('static/image/background.png')"></div>
+        <div class="info">
+          <div>
+            <div class="container">
+              <h1>沐雨世界 MuyuCraft</h1>
+              <em>"一个新时代的我的世界服务器,服务器进步从未停滞"</em>
+              <br>
+              <br>
+              <br>
+              <!--<button class="btn btn-lg" data-clipboard-demo data-clipboard-action=copy data-clipboard-text=play.skpx.me>play.skpx.me (点我复制)</button>-->
+              <a href="joinus.html">
+                <button class="btn btn-lg">加入沐雨</button></a>
+              <h5>与其他玩家一起游戏</h5>
+              <script src="static/js/clip.js" async='async'></script>
+              <script src="static/js/success.js" async='async'></script>
+              <script src="static/js/tt.js" async='async'></script>
+            </div>
+          </div>
+        </div>
+      </section>
+      <h2 class="container h1">关于我们</h2>
+      <section class="youplay-features container">
+        <div class="col-md-3 col-sm-6">
+          <a class="feature angled-bg">
+            <i class="fa fa-thumbs-up"></i>
+            <h3>年轻的管理团队</h3>
+            <small>管理组都是初高中生qwq</small></a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="feature angled-bg">
+            <i class="fa fa-gamepad"></i>
+            <h3>多种服务器玩法</h3>
+            <small>既有纯净生存服，也有模组生存</small></div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="feature angled-bg">
+            <i class="fa fa-fast-forward"></i>
+            <h3>和蔼的管理员们</h3>
+            <small>咱主打的就是一友善啊awa</small></div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="feature angled-bg">
+            <i class="fa fa-users"></i>
+            <h3>长久的服务器</h3>
+            <small>已经开服一年有余QAQ</small></div>
+        </div>
+      </section>
+      <div class="h2"></div>
+      <section class="youplay-banner youplay-banner-parallax small">
+        <div class="image" style="background-image:url('static/image/background.png')"></div>
+        <div class="info container align-center">
+          <div>
+            <h2>沐雨
+              <br>距开服一周年还有</h2>
+            <div class="countdown h2" data-end="2024-01-27 00:00" data-timezone="EST"></div>
+            <br>
+            <br>
+            <!--<button class="btn btn-lg" data-clipboard-demo data-clipboard-action=copy data-clipboard-text=play.skpx.me>现在加入服务器！ (点我复制)</button>-->
+            <a href="joinus.html">
+              <button class="btn btn-lg">加入沐雨</button></a>
+          </div>
+        </div>
+      </section>
+      <h2 class="container h1">生存类服务器</h2>
+      <div class="youplay-carousel" data-autoplay="5000">
+        <a class="angled-img" href="#">
+          <div class="img">
+            <img src="static/picture/survival_500.jpg" alt=""></div>
+          <div class="over-info">
+            <div>
+              <div>
+                <h4>1.20.1原版生存</h4>
+                <div class="rating">
+                  <p>纯净的MC生存体验,自由的规则,完善的防熊系统</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="angled-img" href="#!">
+          <div class="img">
+            <img src="static/picture/skyblock_500.jpg" alt=""></div>
+          <div class="over-info">
+            <div>
+              <div>
+                <h4>单方块生存</h4>
+                <div class="rating">
+                  <p>你的空岛你做主！</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="angled-img" href="#!">
+          <div class="img">
+            <img src="static/picture/rpg1_500.jpg" alt=""></div>
+          <div class="over-info">
+            <div>
+              <div>
+                <h4>UHC大逃杀</h4>
+                <div class="rating">
+                  <p>1.16.5生存大逃杀！谁能坚持到最后？
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <h2 class="container h1">服务器管理人员</h2>
+      <div class="youplay-carousel" style="background-color:#f44336">
+        <a class="angled-img" href="#!">
+          <div class="img img-offset">
+            <img src="static/picture/XuanAngGaga.png" alt=""></div>
+          <div class="bottom-info">
+            <h4>XuanAngGaga</h4>
+            <div class="row">
+              <div class="col-xs-6">
+                <p>职位:服主</p>
+              </div>
+              <div class="col-xs-6"></div>
+            </div>
+          </div>
+        </a>
+        <a class="angled-img" href="#!">
+          <div class="img img-offset">
+            <img src="static/picture/Misaka19090CN.png" alt=""></div>
+          <div class="bottom-info">
+            <h4>Misaka19090CN</h4>
+            <div class="row">
+              <div class="col-xs-6">
+                <p>职位:客服</p>
+              </div>
+              <div class="col-xs-6">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="angled-img" href="#!">
+          <div class="img img-offset">
+            <img src="static/picture/LinFengChan.png" alt=""></div>
+          <div class="bottom-info">
+            <h4>林风大可爱</h4>
+            <div class="row">
+              <div class="col-xs-6">
+                <p>职位:吉祥物</p>
+              </div>
+              <div class="col-xs-6">
+                <p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="angled-img" href="#!">
+          <div class="img img-offset">
+            <img src="static/picture/HRJJACK.png" alt=""></div>
+          <div class="bottom-info">
+            <h4>HRJJACK</h4>
+            <div class="row">
+              <div class="col-xs-6">
+                <p>职位:技术</p>
+              </div>
+              <div class="col-xs-6">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <h2 class="container h1">沐雨公告</h2>
+      <section class="youplay-news container">
+        <div class="news-one">
+          <div class="row vertical-gutter">
+            <div class="col-md-4">
+              <a href="data-1.html" class="angled-img">
+                <div class="img">
+                  <img src="static/picture/blog_pic.jpg" alt=""></div>
+              </a>
+            </div>
+            <div class="col-md-8">
+              <div class="clearfix">
+                <h3 class="h2 pull-left m-0">
+                  <a href="data-1.html">欢迎来到沐雨官网!</a></h3>
+              </div>
+              <div class="description">
+                <p>官网可以引导您完成一切你需要的服务...</p>
+              </div>
+              <a href="data-1.html" class="btn btn-lg">了解详情</a></div>
+          </div>
+        </div>
+
+        </div>
+      </section>
+      <section class="youplay-banner youplay-banner-parallax small mt-80">
+        <div class="image" style="background-image:url('static/image/background.png')"></div>
+        <div class="info align-center">
+          <div>
+            <h2 class="mb-40">留言</h2>
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="owl-carousel" data-autoplay="6000">
+                  <div class="item">
+                    <h3>&nbsp我喜欢玩原神</h3>
+                    <p>Leaf_ash</p>
+                    <p>沐雨玩家</p>
+                  </div>
+                  <div class="item">
+                    <h3>&nbsp我也喜欢玩原神</h3>
+                    <p>林风大可爱</p>
+                    <p>沐雨管理员</p>
+                  </div>
+                  <div class="item">
+                    <h3>&nbsp不要玩原神！</h3>
+                    <p>XuanAngGaga</p>
+                    <p>沐雨服主</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="youplay-footer-parallax">
+        <script type="text/javascript" src="static/js/tw_cn.js"></script>
+        <script type="text/javascript">var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
+          var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
+          var cookieDomain = "https://www.skpx.me/"; //Cookie地址, 一定要设定, 通常为你的网址
+          var msgToTraditionalChinese = "中文繁體"; //此处可以更改为你想要显示的文字
+          var msgToSimplifiedChinese = "中文简体"; //同上，但两处均不建议更改
+          var translateButtonId = "translateLink"; //默认互换id
+          translateInitilization();</script>
+        <link rel="stylesheet" href="static/css/all.min.css">
+        <div class="wrapper" style="background-image:url('static/image/banner-bakg.jpg')">
+          <div class="social">
+            <div class="container">
+              <h3>查看<strong>我们</strong>的公众账号</h3>
+              <div class="social-icons">
+              <div class="social-icon">
+              <a href="https://space.bilibili.com/619806940">
+              <i class="fa fa-play"></i>
+              <span>在哔哩哔哩上找到我们</span>
+              </a>
+              </div>
+              <div class="social-icon">
+              <a href='https://www.youtube.com/channel/UC20_HvC0ObRYv8odt2tl9WA'>
+              <i class="fab fa-youtube"></i>
+              <span>在YouTube上找到我们</span>
+              </a>
+              </div>
+              <div class="social-icon">
+              <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Tp9ZWR-jEDt2TKRPhOckMlM2kmZZ76iU&authKey=bIcCRJCbB7Zuxp5cpY2sT6s0E7VuXmDF3xRLbTqnUvbviT3kmd6KUG9TrA7nk6x4&noverify=0&group_code=615115748">
+              <i class="fab fa-qq"></i>
+              <span>加入我们官方QQ群</span>
+              </a>
+              </div>
+              <div class="social-icon">
+              <a href="https://discord.gg/MkruqcsqqF">
+              <i class="fab fa-discord"></i>
+              <span>加入我们官方Discord</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+              <!-- <a href="https://www.LXH5068.com" target="_blank"><img height="31" width="88" src="./CDiK6kw7p6M46RpFlVRT.png" alt="CDiK6kw7p6M46RpFlVRT.png" title="CDiK6kw7p6M46RpFlVRT.png" /></a>-->
+              <!-- Automated remove, Reason: Didn't found "www.skpx.me" in website=> www.i8mc.cn -->
+              <br>
+              <strong>沐雨 Networks</strong>&copy; 2023-2024. All rights reserved</div></div>
+        </div>
+      </footer>
+    </section>
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.hexagonprogress.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/jarallax.min.js"></script>
+    <!-- <script type=text/javascript src=static/js/SmoothScroll.js></script> -->
+    <script type="text/javascript" src="static/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="static/js/moment.min.js"></script>
+    <script type="text/javascript" src="static/js/moment-timezone-with-data.min.js"></script>
+    <script type="text/javascript" src="static/js/youplay.min.js"></script>
+    <script>if (typeof youplay !== "undefined") {
+        youplay.init({
+          parallax: true,
+          navbarSmall: false,
+          fadeBetweenPages: true,
+          php: {
+            twitter: "./php/twitter/tweet.php",
+            instagram: "./php/instagram/instagram.php"
+          }
+        })
+      }</script>
+    <script type="text/javascript">$(".countdown").each(function() {
+        var b = $(this).attr("data-timezone");
+        var a = $(this).attr("data-end");
+        a = moment.tz(a, b).toDate();
+        $(this).countdown(a,
+        function(c) {
+          $(this).text(c.strftime("%D 天 %H:%M:%S"))
+        })
+      });</script>
+    <!--CSS From Header--></body>
+  <script>console.clear;
+    console.log("%c-----------沐雨-----------\n\n\n\n\n%c恭喜你喜提彩蛋！ 如果你对我的世界感兴趣，请加群联系我们\n\n\n\n\n%c-----------沐雨-----------", "color:blue", "color:red", "color:blue")</script>
+
+</html>
