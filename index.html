@@ -72,7 +72,10 @@
     }
 
     .custom-width-card {
-        width: calc(33% - 20px); /* 设置卡片宽度为父容器宽度的三分之一减去适当间距，这里假设每个卡片左右间距各为10px */
+        /* width: calc(33% - 20px); */ /* 设置卡片宽度为父容器宽度的三分之一减去适当间距，这里假设每个卡片左右间距各为10px */
+
+        flex: 1 0 auto; /* 自适应宽度，每个卡片占据相等的空间 */
+        margin: 10px; /* 添加适当的左右间距 */
     }
 </style>
 
@@ -193,8 +196,8 @@
                 <img src="./images/background.jpg" style="max-height: 300px;object-fit: cover;" />
             </div> -->
                 <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">关于我们</div>
-                    <div class="mdui-card-primary-subtitle">这是服务器的创始人</div>
+                    <div class="mdui-card-primary-title">关于服务器</div>
+                    <div class="mdui-card-primary-subtitle">关于服务器特色</div>
                 </div>
                 <div class="mdui-card-content">
                 
