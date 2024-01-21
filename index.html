@@ -48,6 +48,8 @@
 
 <!-- 通义灵码部分结束 -->
 
+<!-- 改图标大小并且改颜色值 -->
+
 <style>
     .mdui-icon-grayscale {
         color: rgba(0, 0, 0, 0.38); /* 或者自定义一个灰色值 */
@@ -64,6 +66,8 @@
     }
 </style>
 
+<!-- 自适应宽度，每个卡片占据相等的空间 -->
+
 <style>
     .card-container {
         display: flex;
@@ -78,6 +82,37 @@
         margin: 10px; /* 添加适当的左右间距 */
     }
 </style>
+
+<!-- 图标、标题、副标题居中 -->
+
+<style>
+    .custom-width-card {
+        width: 300px; /* 自定义宽度，根据需要调整 */
+    }
+    
+    .mdui-card-primary-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .mdui-icon-large {
+        margin-bottom: 10px; /* 为图标和标题之间添加间距 */
+    }
+</style>
+
+<!-- <style>
+    .countdown {
+        text-align: center;
+    }
+    .year-countdown { /* 为二级标题添加自定义样式 */
+        font-size: 1.5em; /* 调整字体大小以匹配二级标题 */
+        margin: 0; /* 清除默认的顶部和底部外边距 */
+    }
+</style> -->
 
 </head>
 <!-- v1.0，无背景(目前视频背景需要用到它,以设置顶栏的颜色) -->
@@ -146,9 +181,7 @@
                 </a>
                 <a href="./Announcement.html" class="mdui-list-item mdui-ripple" style="border-radius: 16px;">
                     <i class="mdui-list-item-icon mdui-icon material-icons">assignment</i>
-                    <div class="mdui-list-item-content">
-                        公告
-                    </div>
+                    <div class="mdui-list-item-content">公告</div>
                 </a>
 
             </div>
@@ -252,18 +285,24 @@
                         <!-- 卡片1 -->
                         <div class="mdui-card custom-width-card mdui-shadow-2">
                             <div class="mdui-card-primary">
-                                <i class="mdui-icon material-icons mdui-icon-grayscale mdui-icon-large">thumb_up</i>
-                                <div class="mdui-card-primary-title">年轻的管理团队</div>
-                                <div class="mdui-card-primary-subtitle">管理组都是初高中生qwq</div>
+                                <!-- 添加一个div盒子，以应用居中效果 -->
+                                <div class="mdui-card-primary-content">
+                                    <i class="mdui-icon material-icons mdui-icon-grayscale mdui-icon-large">thumb_up</i>
+                                    <div class="mdui-card-primary-title">年轻的管理团队</div>
+                                    <div class="mdui-card-primary-subtitle">管理组都是初高中生qwq</div>
+                                </div>
                             </div>
                         </div>
 
                         <!-- 卡片2 -->
                         <div class="mdui-card custom-width-card mdui-shadow-2">
                             <div class="mdui-card-primary">
-                                <i class="mdui-icon material-icons mdui-icon-grayscale mdui-icon-large">videogame_asset</i>
-                                <div class="mdui-card-primary-title">多种服务器玩法</div>
-                                <div class="mdui-card-primary-subtitle">既有纯净生存服，也有模组生存</div>
+                                <!-- 添加一个div盒子，以应用居中效果 -->
+                                <div class="mdui-card-primary-content">
+                                    <i class="mdui-icon material-icons mdui-icon-grayscale mdui-icon-large">videogame_asset</i>
+                                    <div class="mdui-card-primary-title">多种服务器玩法</div>
+                                    <div class="mdui-card-primary-subtitle">既有纯净生存服，也有模组生存</div>
+                                </div>
                             </div>
                         </div>
 
@@ -272,9 +311,24 @@
                         <!-- 卡片3 -->
                         <div class="mdui-card custom-width-card mdui-shadow-2">
                             <div class="mdui-card-primary">
-                                <i class="mdui-icon material-icons mdui-icon-grayscale mdui-icon-large">thumb_up</i>
-                                <div class="mdui-card-primary-title">卡片标题示例2</div>
-                                <div class="mdui-card-primary-subtitle">副标题示例2</div>
+                                <!-- 添加一个div盒子，以应用居中效果 -->
+                                <div class="mdui-card-primary-content">
+                                    <i class="mdui-icon material-icons mdui-icon-grayscale mdui-icon-large">favorite</i>
+                                    <div class="mdui-card-primary-title">和蔼的管理员们</div>
+                                    <div class="mdui-card-primary-subtitle">咱主打的就是一友善啊awa</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 卡片3 -->
+                        <div class="mdui-card custom-width-card mdui-shadow-2">
+                            <div class="mdui-card-primary">
+                                <!-- 添加一个div盒子，以应用居中效果 -->
+                                <div class="mdui-card-primary-content">
+                                    <i class="mdui-icon material-icons mdui-icon-grayscale mdui-icon-large">people</i>
+                                    <div class="mdui-card-primary-title">长久的服务器</div>
+                                    <div class="mdui-card-primary-subtitle">已经开服一年有余QAQ</div>
+                                </div>
                             </div>
                         </div>
 
@@ -288,6 +342,131 @@
 
             <br>
     </div>
+
+    <div class="mdui-container" style="max-width: 800px;">
+        <br>
+        <div class="mdui-card" style="border-radius: 12px;">
+            <!-- <div class="mdui-card-media">
+                <img src="./images/background.jpg" style="max-height: 300px;object-fit: cover;" />
+            </div> -->
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">服务器信息</div>
+                <div class="mdui-card-primary-subtitle">服务器倒计时~~</div>
+
+                
+            </div>
+                <div class="mdui-card-content">
+                
+                    <div class="mdui-card">
+
+                        <!-- 卡片的标题和副标题 -->
+                        <div class="mdui-card-primary">
+                            <!-- 添加一个div盒子，以应用居中效果 -->
+                            <div class="mdui-card-primary-content">
+                                <!-- <div class="mdui-card-primary-title"><h1>沐雨服务器</h1></div> -->
+                                <!-- <div class="mdui-card-primary-title">距开服一周年还有</div> -->
+                                <!-- <div id="year-countdown">距开服一周年还有</div> -->
+                                <h1 id="year-countdown">距开服一周年还有</h1>
+                                <h1 class="countdown">距离指定时间还有...</h1>
+
+                                <a href="./Join.html" class="mdui-btn mdui-ripple" mdui-tooltip="{content: '与其他玩家一起游戏'}">加入服务器</a>
+
+                                <!-- <div class="mdui-card-primary-subtitle">111</div> -->
+                            </div>
+                        </div>
+                  
+                        <!-- 添加一个div盒子，以应用居中效果 -->
+                        <!-- <div class="mdui-card-primary-content"> -->
+                            <!-- 卡片的内容 -->
+                            <!-- <div class="mdui-card-content"> -->
+                                <!-- <h1 class="countdown">距离指定时间还有...</h1> -->
+                            <!-- </div>
+                        </div> -->
+                        <!-- 倒计时 v1.0 -->
+                        <!-- <script>
+                            // 指定的日期时间
+                            var targetDate = new Date("2024-01-15T00:00:00").getTime(); // 替换为你想要的时间
+                    
+                            function updateCountdown() {
+                                var now = new Date().getTime();
+                                var distance = targetDate - now;
+                    
+                                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                                document.querySelector('.countdown').innerText = `距离指定时间还有 ${days} 天 ${hours} 小时 ${minutes} 分钟 ${seconds} 秒`;
+                    
+                                if (distance < 0) {
+                                    clearInterval(countdownInterval);
+                                    document.querySelector('.countdown').innerText = "已到达指定时间！";
+                                }
+                            }
+                    
+                            var countdownInterval = setInterval(updateCountdown, 1000);
+                        </script> -->
+
+                        <!-- 倒计时 & 正计时 v1.0 -->
+                        <!-- <script>
+                            // 指定的日期时间
+                            var targetDate = new Date("2024-01-27T00:00:00").getTime(); // 替换为你想要的时间
+                    
+                            function updateCountdown() {
+                                var now = new Date().getTime();
+                                var distance = now - targetDate; // 计算现在与目标时间的差值，正数表示未来，负数表示过去
+                    
+                                var days = Math.floor(Math.abs(distance) / (1000 * 60 * 60 * 24));
+                                var hours = Math.floor((Math.abs(distance) % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                var minutes = Math.floor((Math.abs(distance) % (1000 * 60 * 60)) / (1000 * 60));
+                                var seconds = Math.floor((Math.abs(distance) % (1000 * 60)) / 1000);
+                    
+                                var prefix = distance > 0 ? "距离" : "超过";
+                                document.querySelector('.countdown').innerText = `${prefix}指定时间 ${days} 天 ${hours} 小时 ${minutes} 分钟 ${seconds} 秒`;
+                    
+                                // 不需要清除定时器，因为我们要持续更新
+                                
+                            }
+                    
+                            setInterval(updateCountdown, 1000);
+                        </script> -->
+
+                        <!-- 倒计时 & 正计时 v1.1 -->
+                        <script>
+                            // 指定的日期时间（假设一年后是开服一周年）
+                            var targetDate = new Date();
+                            var targetDate = new Date("2024-01-27T00:00:00").getTime(); // 将年份增加1以达到一年后的日期
+                    
+                            function updateCountdown() {
+                                var now = new Date().getTime();
+                                var distance = now - targetDate; // 现在与目标时间的差值，正数表示未来，负数表示过去
+
+                                var days = Math.floor(Math.abs(distance) / (1000 * 60 * 60 * 24));
+                                var hours = Math.floor((Math.abs(distance) % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                var minutes = Math.floor((Math.abs(distance) % (1000 * 60 * 60)) / (1000 * 60));
+                                var seconds = Math.floor((Math.abs(distance) % (1000 * 60)) / 1000);
+
+                                // document.querySelector('.countdown').innerText = `${distance > 0 ? "距离" : "已超过"}指定时间 ${days} 天 ${hours} 小时 ${minutes} 分钟 ${seconds} 秒`;
+                                document.querySelector('.countdown').innerText = `${days} 天 ${hours} 小时 ${minutes} 分钟 ${seconds} 秒`;
+
+                                if (now >= targetDate) { // 判断是否已经到达或超过指定时间
+                                    document.getElementById('year-countdown').innerText = "我们已开服";
+                                }
+                            }
+
+                    
+                            var countdownInterval = setInterval(updateCountdown, 1000);
+                        </script>
+                    </div>
+
+                </div>
+
+        </div>
+
+            <br>
+    </div>
+
+
 
 
     <div class="mdui-container" style="max-width: 800px;">
