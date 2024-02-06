@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<!-- Name: Youplay - Game Template based on Bootstrap Modified By Skypixel Server (PAID) -->
 <html>
   
   <head>
+    <!-- 设置网页字符集为UTF-8 -->
     <meta charset="utf-8">
+    <!-- 指定IE浏览器使用最新可用的渲染引擎（Edge）以提高兼容性 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置网页标题 -->
     <title>MuyuCraft - 沐雨世界</title>
+    <!-- 这个设置关键词，方便搜索引擎收录网站 -->
     <meta name="keywords" content="我的世界服务器,Minecraft服务器,我的世界,Minecraft,Minecraft联机,沐雨">
+    <!-- 设置网页简介 -->
     <meta name="description" content="MuyuServer,MuyuCraft,Minecraft Server,沐雨服务器,沐雨世界">
+    <!-- 设置viewport元标签，优化移动设备上的网页布局 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='static/css/css-Lato300400700.css' rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
@@ -21,6 +26,8 @@
   <style type="text/css">.preloaderbtn{ text-align: center; border-radius: 20px; width: 300px; height: 350px; margin: auto; position: absolute; top: 0; left: 0; right: 0; bottom: 0; }</style>
   
   <body>
+    <!-- 预加载器容器，包含logo、加载动画和关闭按钮 -->
+
     <!-- Preloader -->
     <!-- <div id="preloader" class="page-preloader preloader-wrapp">
     <img src="assets/images/logo.png" alt="">
@@ -33,13 +40,43 @@
     </script>
     -->
     <!-- /Preloader -->
-    <script type="text/javascript">document.body.onfocus = function() {
-        document.title = MuyuCraft - 沐雨世界
-      };
-      document.body.onblur = function() {
-        document.title = "发呆- ( ゜- ゜)つロ"
-      };</script>
-    <style>.alert { padding: 20px; color: white; } .closebtn { margin-left: 15px; color: white; font-weight: bold; float: right; font-size: 22px; line-height: 20px; cursor: pointer; transition: 0.3s; } .closebtn:hover { color: black; }</style>
+
+    <!-- 动态更改网页标题(网页获得焦点的时候与失去焦点的时候的网页标题是不一样的) -->
+    <script type="text/javascript">
+      window.addEventListener('focus', function() {
+          document.title = "MuyuCraft - 沐雨世界";
+      });
+  
+      window.addEventListener('blur', function() {
+          document.title = "发呆- ( ゜- ゜)つロ";
+      });
+    </script>
+    
+    <style>
+      /* 定义提示框样式 */
+      .alert {
+          padding: 20px; /* 设置内边距为20像素 */
+          color: white; /* 文本颜色为白色 */
+      }
+  
+      /* 定义关闭按钮样式 */
+      .closebtn {
+          margin-left: 15px; /* 左外边距为15像素 */
+          color: white; /* 文本颜色为白色 */
+          font-weight: bold; /* 设置字体加粗 */
+          float: right; /* 让元素右浮动 */
+          font-size: 22px; /* 设置字体大小为22像素 */
+          line-height: 20px; /* 设置行高为20像素 */
+          cursor: pointer; /* 设置鼠标指针为手型，表示可点击 */
+          transition: 0.3s; /* 添加过渡效果，持续时间为0.3秒 */
+      }
+  
+      /* 当鼠标悬浮在关闭按钮上时的样式 */
+      .closebtn:hover {
+          color: black; /* 更改文本颜色为黑色 */
+      }
+    </style>
+
     <!-- Navbar -->
     <nav class="navbar-youplay navbar navbar-default navbar-fixed-top ">
       <div class="container">
@@ -50,8 +87,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <!-- 放置 Navigation -->
           <a class="navbar-brand" href="">
-            </a>
+            <span>沐雨服务器</span>
+          </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">

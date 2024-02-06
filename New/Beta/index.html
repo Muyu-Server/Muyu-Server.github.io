@@ -10,160 +10,15 @@
     <link rel="stylesheet" href="css/docs-v17.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/mdui.min.css" />
+
+    <!-- 引入 Style 文件 -->
+    <link rel="stylesheet" href="css/style.css" />
+
     <script src="js/mdui.min.js"></script>
     <script src="js/jquery.min.js"></script>
 
     <audio id="backgroundMusic" src="./Resources/Music/BackgroundMusic.mp3" loop style="display:none;"></audio>
 
-
-    <!-- 此部分的代码使用 `通义灵码` 编写，本人(KFACBT)只添加了注释 -->
-    <!-- 背景样式 -->
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            /* overflow: hidden; */ /* 防止滚动条出现 */
-        }
-        .video-background {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            
-            /* 注释部分是自适应视频背景的代码 */
-            min-width: 100%;
-            
-            /* 下方两行是视频根据容器宽度进行等比缩放的代码 */
-            /* width: 100%; 
-            height: auto; */
-
-            min-height: 100%;
-            z-index: -1;
-            opacity: 0.5; /* 背景视频的不透明度，可调整 */
-
-            /* 下方是自适应视频背景的代码 */
-            background-size: cover;
-        }
-    </style>
-
-<!-- 通义灵码部分结束 -->
-
-<style>
-    .mdui-icon-grayscale {
-        color: rgba(0, 0, 0, 0.38); /* 或者自定义一个灰色值 */
-    }
-
-    .mdui-icon-large {
-        font-size: 5rem; /* 调整为你需要的大图标大小 */
-    }
-</style>
-
-<style>
-    .card-container {
-        display: flex;
-        flex-wrap: wrap; /* 允许换行 */
-        justify-content: space-between; /* 两端对齐，卡片之间有间距 */
-    }
-
-    .custom-width-card {
-        /* width: calc(33% - 20px); */ /* 设置卡片宽度为父容器宽度的三分之一减去适当间距，这里假设每个卡片左右间距各为10px */
-
-        flex: 1 0 auto; /* 自适应宽度，每个卡片占据相等的空间 */
-        margin: 10px; /* 添加适当的左右间距 */
-    }
-</style>
-
-<!-- 代码作用：更改顶栏文本颜色为白色 -->
-<!-- <style>
-    /* 更改顶栏文字颜色 */
-    .mdui-appbar {
-      color: #fff !important; /* 使用 '!important' 来确保优先级高于框架内联样式或主题样式 */
-    }
-
-    /* 如果需要更改工具栏中的按钮等元素的颜色 */
-    .mdui-toolbar a,
-    .mdui-toolbar span,
-    .mdui-toolbar i,
-    .mdui-toolbar button,
-    .mdui-toolbar .mdui-btn {
-      color: #fff !important;
-    }
-</style> -->
-
-<!-- <style>
-    /* 只修改顶栏内的文本颜色 */
-    .mdui-appbar a,
-    .mdui-appbar span,
-    .mdui-appbar button {
-        color: #fff !important;
-    }
-    
-    /* 如果顶栏内有MDUI图标，也可以单独设置其颜色 */
-    .mdui-appbar i.mdui-icon {
-        color: #000 !important; /* 使用你想要的图标颜色 */
-    }
-</style> -->
-
-<style>
-    /* 修改顶栏内的文本颜色 */
-    .mdui-appbar a,
-    .mdui-appbar span {
-        color: #fff !important;
-    }
-
-    /* 保持按钮颜色不变（如果需要） */
-    .mdui-appbar button.mdui-btn {
-        color: initial; /* 使用MDUI默认颜色，或自定义其他颜色 */
-    }
-
-    /* 单独修改顶栏内MDUI图标的颜色 */
-    .mdui-appbar i.mdui-icon {
-        color: #ffffff !important; /* 将此处的颜色值替换为你想要的颜色 */
-    }
-</style>
-
-<style>
-    /* 设置底部栏中按钮的文字颜色 */
-    .mdui-bottom-nav a.mdui-btn {
-        color: #fff !important;
-    }
-
-    /* 设置 hitokoto 文本的颜色 */
-    #hitokoto {
-        color: #fff !important;
-    }
-</style>
-
-<!-- 控制 MDUI 卡片的全局圆角样式（请注意：如果卡片元素设置了单独的内联样式或具有更高优先级的CSS规则，则此全局设置可能被覆盖） -->
-<style>
-    /* 设置卡片的圆角为10px */
-    .mdui-card {
-        /* border-radius: 10px; */
-        /* 设置卡片默认圆角数值 */
-        border-radius: 5px;
-    }
-</style>
-
-<!-- 图标、标题、副标题居中 -->
-
-<style>
-    .custom-width-card {
-        width: 300px; /* 自定义宽度，根据需要调整 */
-    }
-    
-    .mdui-card-primary-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        height: 100%;
-    }
-
-    .mdui-icon-large {
-        margin-bottom: 10px; /* 为图标和标题之间添加间距 */
-    }
-</style>
 
 </head>
 <!-- v1.0，无背景(目前视频背景需要用到它,以设置顶栏的颜色) -->
@@ -188,34 +43,32 @@
                 沐雨服务器
             </a>
             <a href="index.html#" class="mdui-typo-title">首页</a>
-            <!-- <div class="mdui-toolbar-spacer"></div> -->
 
             <div class="mdui-toolbar-spacer"></div>
-            <!-- <a href="javascript:;" class="mdui-btn mdui-btn-icon">
-              <i class="mdui-icon material-icons">search</i>
-            </a> -->
-            <!-- <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '背景音乐'}" onclick="toggleBackgroundMusic()">
-                <i class="mdui-icon material-icons">music_note</i>
-            </a> -->
-            <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '背景音乐'}" onclick="toggleBackgroundMusic()">
-                <i id="musicIcon" class="mdui-icon material-icons">music_note</i>
-            </a>
-            <!-- <a href="javascript:;" class="mdui-btn mdui-btn-icon">
-                <i class="mdui-icon material-icons">refresh</i>
-            </a> -->
-            <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '刷新此页'}" onclick="refreshPage()">
-                <i class="mdui-icon material-icons">refresh</i>
-            </a>        
-            <!-- <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#menu'}" >
-                <i class="mdui-icon material-icons">more_vert</i>
-            </a> -->
-        </div>
+
+                <!-- 原先版本不会自动切换音乐图标 -->
+                <!-- <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '背景音乐'}" onclick="toggleBackgroundMusic()">
+                    <i class="mdui-icon material-icons">music_note</i>
+                </a> -->
+                <!-- 这个版本会自动切换音乐图标 -->
+                <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '背景音乐'}" onclick="toggleBackgroundMusic()">
+                    <i id="musicIcon" class="mdui-icon material-icons">music_note</i>
+                </a>
+                <!-- 保留一个原版写法 -->
+                <!-- <a href="javascript:;" class="mdui-btn mdui-btn-icon">
+                    <i class="mdui-icon material-icons">refresh</i>
+                </a> -->
+                <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '刷新此页'}" onclick="refreshPage()">
+                    <i class="mdui-icon material-icons">refresh</i>
+                </a>
+            </div>
+        </div>    
     <!-- 菜单元素 -->
 
-        </div>
     </header>
     <div class="mdui-drawer mdui-color-white mdui-drawer-full-height mdui-drawer-close" id="main-drawer">
         <div class="mdui-card-media mdui-ripple mdui-ripple-white">
+            <!-- 设置菜单背景 -->
             <img src="./images/background.jpg" />
 
             <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
@@ -273,13 +126,13 @@
             </div>
         </div>
     </div>
-    <!-- <div class="mdui-bottom-nav mdui-color-theme" style="height: 70px;">
+    <div class="mdui-bottom-nav mdui-color-theme" style="height: 70px;">
         <div class="mdui-container mdui-valign">
             <div class="mdui-row mdui-center">
 
             </div>
         </div>
-    </div> -->
+    </div>
 
     
     <div class="mdui-container" style="max-width: 800px;">
@@ -448,6 +301,7 @@
                                 <!-- <h1 class="countdown">距离指定时间还有...</h1> -->
                             <!-- </div>
                         </div> -->
+
                         <!-- 倒计时 v1.0 -->
                         <!-- <script>
                             // 指定的日期时间
@@ -598,30 +452,40 @@
                       
                         <!-- 卡片的按钮 -->
                         <div class="mdui-card-actions">
+                            <!-- 备份 -->
                             <!-- <button class="mdui-btn mdui-ripple">商务联系</button> -->
-                            <!-- <button id="copyButton-QQid" class="mdui-btn mdui-ripple">商务联系</button>
+                            <button id="copyButton-QQid" class="mdui-btn mdui-ripple">QQ</button>
+                            <!-- 调用 Script 时即可复制 QQ 号到剪贴板，同时给予用户反馈(弹出Sneakbar) -->
                             <script>
                                 // 获取指定ID的元素并添加点击事件监听器
                                 document.getElementById('copyButton-QQid').addEventListener('click', function() {
                             
                                     // 定义要复制的文本内容
-                                    var textToCopy = '3390238541';
+                                    var textToCopy = '2932289809';
                             
                                     // 尝试将文本写入剪贴板
                                     try {
                                         navigator.clipboard.writeText(textToCopy);
-                                    } catch (err) {
-                                        console.error('Failed to copy: ', err);
-                                    }
                             
-                                    // 显示Snackbar消息
-                                    mdui.snackbar({
-                                        message: 'QQ 号已经复制到剪贴板！',
-                                        position: 'left-bottom'
-                                    });
+                                        // 复制成功时，在控制台输出成功信息，并显示成功Snackbar
+                                        console.log('文本复制成功！文本内容：' + textToCopy);
+                                        mdui.snackbar({
+                                            message: 'QQ 号已成功复制到剪贴板！',
+                                            position: 'left-bottom'
+                                        });
+                            
+                                    } catch (err) {
+                                        // 复制失败时，在控制台输出错误信息，并显示失败Snackbar
+                                        console.error('复制失败: ', err);
+                                        mdui.snackbar({
+                                            message: '复制 QQ 号到剪贴板时发生错误！',
+                                            position: 'left-bottom'
+                                        });
+                                    }
                                 });
-                            </script> -->
+                            </script>
                             <button class="mdui-btn mdui-ripple" mdui-tooltip="{content: '在新窗口中打开'}" onclick="openNewTab('https://space.bilibili.com/619806940')">哔哩哔哩</button>
+                            <!-- 想不到实际的用处 -->
                             <!-- <button class="mdui-btn mdui-btn-icon mdui-float-right">
                                 <i class="mdui-icon material-icons">expand_more</i>
                             </button> -->
@@ -683,7 +547,7 @@
                          
                 </div>
                     <br>
-                    <!-- 卡片与卡片之间分隔 -->
+                <!-- 卡片与卡片之间分隔 -->
 
                 <!-- 单张卡片开始 -->
                 <div class="mdui-card">
@@ -715,7 +579,7 @@
                          
                 </div>
                     <br>
-                    <!-- 卡片与卡片之间分隔 -->
+                <!-- 卡片与卡片之间分隔 -->
 
                 <!-- 单张卡片开始 -->
                 <div class="mdui-card">
@@ -747,7 +611,7 @@
                          
                 </div>
                     <br>
-                    <!-- 卡片与卡片之间分隔 -->
+                <!-- 卡片与卡片之间分隔 -->
 
                 <!-- 单张卡片开始 -->
                 <div class="mdui-card">
@@ -812,7 +676,7 @@
                          
                 </div>
                     <br>
-                    <!-- 卡片与卡片之间分隔 -->
+                <!-- 卡片与卡片之间分隔 -->
 
                 <!-- 单张卡片开始 -->
                 <div class="mdui-card">
@@ -845,7 +709,7 @@
                          
                 </div>
                     <br>
-                    <!-- 卡片与卡片之间分隔 -->
+                <!-- 卡片与卡片之间分隔 -->
 
 
             </div>
@@ -923,7 +787,7 @@ function toggleBackgroundMusic() {
     } else {
         audioElement.pause(); // 如果音乐播放,就暂停它
         musicIcon.className = 'mdui-icon material-icons'; // 设置组件类名
-        musicIcon.textContent = 'music_note'; // 恢复为音乐图标(music_note),这个是mdui的图标库
+        musicIcon.textContent = 'music_note'; // 恢复为音乐图标(music_note),这个是 MDUI 的图标库
     }
 }
 
@@ -935,4 +799,3 @@ function toggleBackgroundMusic() {
         window.location.reload();
     }
 </script>
-
